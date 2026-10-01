@@ -1,0 +1,412 @@
+[
+  {
+    "patient_id": 10042,
+    "mrn": "MRN-88213",
+    "first_name": "Maria",
+    "middle_name": "Elena",
+    "last_name": "ALVAREZ",
+    "suffix": null,
+    "dob": "1978-04-12 00:00:00",
+    "sex": "F",
+    "ssn": "***-**-6789",
+    "patient_address_id": 1,
+    "home_phone": "(508) 555-0142",
+    "mobile_phone": null,
+    "email": "M.ALVAREZ@Example.COM",
+    "language": "Portuguese",
+    "marital_status": "Married",
+    "deceased_date": null,
+    "active": true,
+    "address": {
+      "address_id": 1,
+      "address_line1": "100 Main St",
+      "address_line2": "Apt 1",
+      "city": "Boston",
+      "state": "MA",
+      "zip_code": "02110"
+    },
+    "visits": [
+      {
+        "patient_visit_id": 1,
+        "visit_date": "2026-08-15 10:30:00",
+        "symptoms": "Fever and dry cough",
+        "prescription": "Amoxicillin 500mg"
+      },
+      {
+        "patient_visit_id": 2,
+        "visit_date": "2026-09-15 10:30:00",
+        "symptoms": "Severe headache and nausea",
+        "prescription": "Ibuprofen 200mg"
+      }
+    ]
+  },
+  {
+    "patient_id": 10043,
+    "mrn": "MRN-88214",
+    "first_name": "James",
+    "middle_name": null,
+    "last_name": "SMITH",
+    "suffix": null,
+    "dob": "1978-04-12 00:00:00",
+    "sex": "M",
+    "ssn": "***-**-6790",
+    "patient_address_id": 2,
+    "home_phone": "(508) 555-0143",
+    "mobile_phone": null,
+    "email": "J.SMITH@Example.COM",
+    "language": "English",
+    "marital_status": "Single",
+    "deceased_date": null,
+    "active": true,
+    "address": {
+      "address_id": 2,
+      "address_line1": "105 Main St",
+      "address_line2": null,
+      "city": "Cambridge",
+      "state": "MA",
+      "zip_code": "02111"
+    },
+    "visits": [
+      {
+        "patient_visit_id": 3,
+        "visit_date": "2026-08-15 10:30:00",
+        "symptoms": "Severe headache and nausea",
+        "prescription": "Amoxicillin 500mg"
+      },
+      {
+        "patient_visit_id": 4,
+        "visit_date": "2026-09-15 10:30:00",
+        "symptoms": "Routine physical checkup",
+        "prescription": "Ibuprofen 200mg"
+      }
+    ]
+  },
+  {
+    "patient_id": 10044,
+    "mrn": "MRN-88215",
+    "first_name": "Robert",
+    "middle_name": "Elena",
+    "last_name": "JONES",
+    "suffix": null,
+    "dob": "1978-04-12 00:00:00",
+    "sex": "F",
+    "ssn": "***-**-6791",
+    "patient_address_id": 3,
+    "home_phone": "(508) 555-0144",
+    "mobile_phone": null,
+    "email": "R.JONES@Example.COM",
+    "language": "English",
+    "marital_status": "Single",
+    "deceased_date": null,
+    "active": true,
+    "address": {
+      "address_id": 3,
+      "address_line1": "110 Main St",
+      "address_line2": "Apt 3",
+      "city": "Somerville",
+      "state": "MA",
+      "zip_code": "02112"
+    },
+    "visits": [
+      {
+        "patient_visit_id": 5,
+        "visit_date": "2026-08-15 10:30:00",
+        "symptoms": "Routine physical checkup",
+        "prescription": "Amoxicillin 500mg"
+      },
+      {
+        "patient_visit_id": 6,
+        "visit_date": "2026-09-15 10:30:00",
+        "symptoms": "Joint pain and fatigue",
+        "prescription": "Ibuprofen 200mg"
+      }
+    ]
+  },
+  {
+    "patient_id": 10045,
+    "mrn": "MRN-88216",
+    "first_name": "Patricia",
+    "middle_name": null,
+    "last_name": "GARCIA",
+    "suffix": null,
+    "dob": "1978-04-12 00:00:00",
+    "sex": "M",
+    "ssn": "***-**-6792",
+    "patient_address_id": 4,
+    "home_phone": "(508) 555-0145",
+    "mobile_phone": null,
+    "email": "P.GARCIA@Example.COM",
+    "language": "English",
+    "marital_status": "Married",
+    "deceased_date": null,
+    "active": true,
+    "address": {
+      "address_id": 4,
+      "address_line1": "115 Main St",
+      "address_line2": null,
+      "city": "Quincy",
+      "state": "MA",
+      "zip_code": "02113"
+    },
+    "visits": [
+      {
+        "patient_visit_id": 7,
+        "visit_date": "2026-08-15 10:30:00",
+        "symptoms": "Joint pain and fatigue",
+        "prescription": "Amoxicillin 500mg"
+      },
+      {
+        "patient_visit_id": 8,
+        "visit_date": "2026-09-15 10:30:00",
+        "symptoms": "Mild hypertension follow-up",
+        "prescription": "Ibuprofen 200mg"
+      }
+    ]
+  },
+  {
+    "patient_id": 10046,
+    "mrn": "MRN-88217",
+    "first_name": "John",
+    "middle_name": "Elena",
+    "last_name": "MILLER",
+    "suffix": null,
+    "dob": "1978-04-12 00:00:00",
+    "sex": "F",
+    "ssn": "***-**-6793",
+    "patient_address_id": 5,
+    "home_phone": "(508) 555-0146",
+    "mobile_phone": null,
+    "email": "J.MILLER@Example.COM",
+    "language": "English",
+    "marital_status": "Single",
+    "deceased_date": null,
+    "active": true,
+    "address": {
+      "address_id": 5,
+      "address_line1": "120 Main St",
+      "address_line2": "Apt 5",
+      "city": "Newton",
+      "state": "MA",
+      "zip_code": "02114"
+    },
+    "visits": [
+      {
+        "patient_visit_id": 9,
+        "visit_date": "2026-08-15 10:30:00",
+        "symptoms": "Mild hypertension follow-up",
+        "prescription": "Amoxicillin 500mg"
+      },
+      {
+        "patient_visit_id": 10,
+        "visit_date": "2026-09-15 10:30:00",
+        "symptoms": "Fever and dry cough",
+        "prescription": "Ibuprofen 200mg"
+      }
+    ]
+  },
+  {
+    "patient_id": 10047,
+    "mrn": "MRN-88218",
+    "first_name": "Jennifer",
+    "middle_name": null,
+    "last_name": "DAVIS",
+    "suffix": null,
+    "dob": "1978-04-12 00:00:00",
+    "sex": "M",
+    "ssn": "***-**-6794",
+    "patient_address_id": 6,
+    "home_phone": "(508) 555-0147",
+    "mobile_phone": null,
+    "email": "J.DAVIS@Example.COM",
+    "language": "English",
+    "marital_status": "Single",
+    "deceased_date": null,
+    "active": true,
+    "address": {
+      "address_id": 6,
+      "address_line1": "125 Main St",
+      "address_line2": null,
+      "city": "Brookline",
+      "state": "MA",
+      "zip_code": "02115"
+    },
+    "visits": [
+      {
+        "patient_visit_id": 11,
+        "visit_date": "2026-08-15 10:30:00",
+        "symptoms": "Fever and dry cough",
+        "prescription": "Amoxicillin 500mg"
+      },
+      {
+        "patient_visit_id": 12,
+        "visit_date": "2026-09-15 10:30:00",
+        "symptoms": "Severe headache and nausea",
+        "prescription": "Ibuprofen 200mg"
+      }
+    ]
+  },
+  {
+    "patient_id": 10048,
+    "mrn": "MRN-88219",
+    "first_name": "Michael",
+    "middle_name": "Elena",
+    "last_name": "RODRIGUEZ",
+    "suffix": null,
+    "dob": "1978-04-12 00:00:00",
+    "sex": "F",
+    "ssn": "***-**-6795",
+    "patient_address_id": 7,
+    "home_phone": "(508) 555-0148",
+    "mobile_phone": null,
+    "email": "M.RODRIGUEZ@Example.COM",
+    "language": "English",
+    "marital_status": "Married",
+    "deceased_date": null,
+    "active": true,
+    "address": {
+      "address_id": 7,
+      "address_line1": "130 Main St",
+      "address_line2": "Apt 7",
+      "city": "Waltham",
+      "state": "MA",
+      "zip_code": "02116"
+    },
+    "visits": [
+      {
+        "patient_visit_id": 13,
+        "visit_date": "2026-08-15 10:30:00",
+        "symptoms": "Severe headache and nausea",
+        "prescription": "Amoxicillin 500mg"
+      },
+      {
+        "patient_visit_id": 14,
+        "visit_date": "2026-09-15 10:30:00",
+        "symptoms": "Routine physical checkup",
+        "prescription": "Ibuprofen 200mg"
+      }
+    ]
+  },
+  {
+    "patient_id": 10049,
+    "mrn": "MRN-88220",
+    "first_name": "Linda",
+    "middle_name": null,
+    "last_name": "MARTINEZ",
+    "suffix": null,
+    "dob": "1978-04-12 00:00:00",
+    "sex": "M",
+    "ssn": "***-**-6796",
+    "patient_address_id": 8,
+    "home_phone": "(508) 555-0149",
+    "mobile_phone": null,
+    "email": "L.MARTINEZ@Example.COM",
+    "language": "English",
+    "marital_status": "Single",
+    "deceased_date": null,
+    "active": true,
+    "address": {
+      "address_id": 8,
+      "address_line1": "135 Main St",
+      "address_line2": null,
+      "city": "Malden",
+      "state": "MA",
+      "zip_code": "02117"
+    },
+    "visits": [
+      {
+        "patient_visit_id": 15,
+        "visit_date": "2026-08-15 10:30:00",
+        "symptoms": "Routine physical checkup",
+        "prescription": "Amoxicillin 500mg"
+      },
+      {
+        "patient_visit_id": 16,
+        "visit_date": "2026-09-15 10:30:00",
+        "symptoms": "Joint pain and fatigue",
+        "prescription": "Ibuprofen 200mg"
+      }
+    ]
+  },
+  {
+    "patient_id": 10050,
+    "mrn": "MRN-88221",
+    "first_name": "David",
+    "middle_name": "Elena",
+    "last_name": "HERNANDEZ",
+    "suffix": null,
+    "dob": "1978-04-12 00:00:00",
+    "sex": "F",
+    "ssn": "***-**-6797",
+    "patient_address_id": 9,
+    "home_phone": "(508) 555-0150",
+    "mobile_phone": null,
+    "email": "D.HERNANDEZ@Example.COM",
+    "language": "English",
+    "marital_status": "Single",
+    "deceased_date": null,
+    "active": true,
+    "address": {
+      "address_id": 9,
+      "address_line1": "140 Main St",
+      "address_line2": "Apt 9",
+      "city": "Medford",
+      "state": "MA",
+      "zip_code": "02118"
+    },
+    "visits": [
+      {
+        "patient_visit_id": 17,
+        "visit_date": "2026-08-15 10:30:00",
+        "symptoms": "Joint pain and fatigue",
+        "prescription": "Amoxicillin 500mg"
+      },
+      {
+        "patient_visit_id": 18,
+        "visit_date": "2026-09-15 10:30:00",
+        "symptoms": "Mild hypertension follow-up",
+        "prescription": "Ibuprofen 200mg"
+      }
+    ]
+  },
+  {
+    "patient_id": 10051,
+    "mrn": "MRN-88222",
+    "first_name": "Elizabeth",
+    "middle_name": null,
+    "last_name": "LOPEZ",
+    "suffix": null,
+    "dob": "1978-04-12 00:00:00",
+    "sex": "M",
+    "ssn": "***-**-6798",
+    "patient_address_id": 10,
+    "home_phone": "(508) 555-0151",
+    "mobile_phone": null,
+    "email": "E.LOPEZ@Example.COM",
+    "language": "English",
+    "marital_status": "Married",
+    "deceased_date": null,
+    "active": true,
+    "address": {
+      "address_id": 10,
+      "address_line1": "145 Main St",
+      "address_line2": null,
+      "city": "Revere",
+      "state": "MA",
+      "zip_code": "02119"
+    },
+    "visits": [
+      {
+        "patient_visit_id": 19,
+        "visit_date": "2026-08-15 10:30:00",
+        "symptoms": "Mild hypertension follow-up",
+        "prescription": "Amoxicillin 500mg"
+      },
+      {
+        "patient_visit_id": 20,
+        "visit_date": "2026-09-15 10:30:00",
+        "symptoms": "Fever and dry cough",
+        "prescription": "Ibuprofen 200mg"
+      }
+    ]
+  }
+]

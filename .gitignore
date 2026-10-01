@@ -1,0 +1,23 @@
+# Python caches and tooling
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Local runtime artifacts
+tmp/
+log.txt
+project/log.txt
+project/agentic_etl/log.txt
+patient_output_agentic.json
+.patient_output*.tmp
+.env
+
+# Common editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,4 @@
+# Agentic ETL only. The deterministic ETL uses the Python standard library.
+google-adk==2.10.0
+pydantic>=2.12,<3
+python-dotenv>=1,<2
