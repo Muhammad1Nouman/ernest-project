@@ -8,6 +8,8 @@ from contextlib import closing
 from pathlib import Path
 from typing import Any, Dict, List, Generator
 
+from ..observability.retry import RetryPolicy, run_with_retry
+
 
 class DataIntegrityError(ValueError):
     """Raised when database relationships violate the expected schema."""
@@ -16,8 +18,14 @@ class DataIntegrityError(ValueError):
 class SQLiteExtractor:
     """Extracts relational patient data from a read-only SQLite database."""
 
-    def __init__(self, db_path: str | Path) -> None:
+    def __init__(
+        self,
+        db_path: str | Path,
+        *,
+        retry_policy: RetryPolicy | None = None,
+    ) -> None:
         self.db_path = Path(db_path).resolve()
+        self.retry_policy = retry_policy or RetryPolicy()
         self.logger = logging.getLogger(__name__)
 
     def _get_connection(self) -> sqlite3.Connection:
@@ -27,7 +35,13 @@ class SQLiteExtractor:
 
         # Use URI mode to enforce read-only access safely
         uri = f"{self.db_path.as_uri()}?mode=ro"
-        conn = sqlite3.connect(uri, uri=True)
+        (conn, _) = run_with_retry(
+            lambda: sqlite3.connect(uri, uri=True),
+            policy=self.retry_policy,
+            retryable=lambda error: isinstance(error, sqlite3.OperationalError),
+            operation_name="sqlite_connect",
+            logger=self.logger,
+        )
         conn.row_factory = sqlite3.Row
         
         # Enforce read-only at the database engine level

@@ -1,0 +1,272 @@
+[
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient",
+    "source_pk": "10042",
+    "resource_type": "Patient",
+    "resource_id": "10042",
+    "mapping_version": "patient-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.817279Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "1",
+    "resource_type": "Encounter",
+    "resource_id": "1",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.877078Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "2",
+    "resource_type": "Encounter",
+    "resource_id": "2",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.878076Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient",
+    "source_pk": "10043",
+    "resource_type": "Patient",
+    "resource_id": "10043",
+    "mapping_version": "patient-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.878076Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "3",
+    "resource_type": "Encounter",
+    "resource_id": "3",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.878076Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "4",
+    "resource_type": "Encounter",
+    "resource_id": "4",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.878076Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient",
+    "source_pk": "10044",
+    "resource_type": "Patient",
+    "resource_id": "10044",
+    "mapping_version": "patient-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.878076Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "5",
+    "resource_type": "Encounter",
+    "resource_id": "5",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.878076Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "6",
+    "resource_type": "Encounter",
+    "resource_id": "6",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.878076Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient",
+    "source_pk": "10045",
+    "resource_type": "Patient",
+    "resource_id": "10045",
+    "mapping_version": "patient-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.878076Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "7",
+    "resource_type": "Encounter",
+    "resource_id": "7",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.878076Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "8",
+    "resource_type": "Encounter",
+    "resource_id": "8",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.878076Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient",
+    "source_pk": "10046",
+    "resource_type": "Patient",
+    "resource_id": "10046",
+    "mapping_version": "patient-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.879586Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "9",
+    "resource_type": "Encounter",
+    "resource_id": "9",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.879586Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "10",
+    "resource_type": "Encounter",
+    "resource_id": "10",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.879586Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient",
+    "source_pk": "10047",
+    "resource_type": "Patient",
+    "resource_id": "10047",
+    "mapping_version": "patient-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.879586Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "11",
+    "resource_type": "Encounter",
+    "resource_id": "11",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.879586Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "12",
+    "resource_type": "Encounter",
+    "resource_id": "12",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.879586Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient",
+    "source_pk": "10048",
+    "resource_type": "Patient",
+    "resource_id": "10048",
+    "mapping_version": "patient-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.879586Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "13",
+    "resource_type": "Encounter",
+    "resource_id": "13",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.880596Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "14",
+    "resource_type": "Encounter",
+    "resource_id": "14",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.880596Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient",
+    "source_pk": "10049",
+    "resource_type": "Patient",
+    "resource_id": "10049",
+    "mapping_version": "patient-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.880596Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "15",
+    "resource_type": "Encounter",
+    "resource_id": "15",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.880596Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "16",
+    "resource_type": "Encounter",
+    "resource_id": "16",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.880596Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient",
+    "source_pk": "10050",
+    "resource_type": "Patient",
+    "resource_id": "10050",
+    "mapping_version": "patient-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.880596Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "17",
+    "resource_type": "Encounter",
+    "resource_id": "17",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.881598Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "18",
+    "resource_type": "Encounter",
+    "resource_id": "18",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.881598Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient",
+    "source_pk": "10051",
+    "resource_type": "Patient",
+    "resource_id": "10051",
+    "mapping_version": "patient-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.882104Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "19",
+    "resource_type": "Encounter",
+    "resource_id": "19",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.882104Z"
+  },
+  {
+    "run_id": "fhir-20261002T120648-6209429a",
+    "source_table": "patient_visit",
+    "source_pk": "20",
+    "resource_type": "Encounter",
+    "resource_id": "20",
+    "mapping_version": "encounter-r4-v1.0",
+    "processed_at": "2026-10-02T12:06:48.882104Z"
+  }
+]

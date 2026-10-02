@@ -1,0 +1,84 @@
+{
+  "run_id": "fhir-20261002T120648-6209429a",
+  "implementation": "deterministic",
+  "started_at": "2026-10-02T12:06:48.776926Z",
+  "status": "COMPLETED_WITH_ALERTS",
+  "fhir_version": "R4",
+  "fhir_spec_version": "4.0.1",
+  "implementation_guide": {
+    "poc_decision": "NOT_REQUIRED_BASE_R4",
+    "selected_packages": [],
+    "production_gate": "Select the client/jurisdiction IG and profiles, or formally approve base R4 as the production contract."
+  },
+  "validation_scope": "base-r4-generated-patient-encounter-subset",
+  "validation": {
+    "lightweight_internal": "PASSED",
+    "official_r4": {
+      "status": "SKIPPED_UNAVAILABLE",
+      "validator": "HL7 FHIR Validator CLI",
+      "fhir_version": "4.0.1",
+      "attempts": 0,
+      "duration_ms": 0.0,
+      "issue_counts": {},
+      "implementation_guides": [],
+      "reason": "FHIR_VALIDATOR_JAR is not configured."
+    }
+  },
+  "mapping_assumptions": {
+    "patient_visit": "patient_visit = completed ambulatory Encounter"
+  },
+  "mapping_versions": {
+    "Patient": "patient-r4-v1.0",
+    "Encounter": "encounter-r4-v1.0",
+    "terminology": "terminology-r4-v1.0"
+  },
+  "source_counts": {
+    "patient": 10,
+    "patient_address": 10,
+    "patient_visit": 20
+  },
+  "result": {
+    "resource_candidates": 30,
+    "resources_generated": 30,
+    "resources_rejected": 0,
+    "success_rate": 1.0,
+    "rejection_rate": 0.0,
+    "resource_counts": {
+      "Encounter": 20,
+      "Patient": 10
+    },
+    "error_counts": {},
+    "lineage_records": 30
+  },
+  "reconciliation": {
+    "Patient": {
+      "expected": 10,
+      "generated": 10,
+      "rejected": 0,
+      "accounted_for": true
+    },
+    "Encounter": {
+      "expected": 20,
+      "generated": 20,
+      "rejected": 0,
+      "accounted_for": true
+    }
+  },
+  "stage_durations_ms": {
+    "extraction": 38.016,
+    "normalization": 65.166,
+    "validation": 6.696,
+    "mapping": 60.808,
+    "official_validation": 0.0,
+    "output": 14.095
+  },
+  "alerts": [
+    "OFFICIAL_FHIR_VALIDATION_UNAVAILABLE"
+  ],
+  "alert_thresholds": {
+    "max_rejection_rate": 0.02,
+    "max_duration_ms": 60000.0,
+    "minimum_patients": 1,
+    "minimum_encounters": 1
+  }
+}

@@ -226,15 +226,14 @@ class AIAgentTransformer:
             except Exception as error:
                 if attempt >= self.max_attempts:
                     raise AgentTransformationError(
-                        f"Failed to normalize patient {patient_id} after "
+                        "Failed to normalize one patient record after "
                         f"{self.max_attempts} attempt(s)."
                     ) from error
                 delay = min(2 ** (attempt - 1), 8)
                 self.logger.warning(
-                    "Agentic ETL attempt %d/%d failed for patient %s; retrying in %ds",
+                    "Agentic normalization attempt %d/%d failed; retrying in %ds",
                     attempt,
                     self.max_attempts,
-                    patient_id,
                     delay,
                 )
                 await asyncio.sleep(delay)
@@ -247,3 +246,10 @@ class AIAgentTransformer:
         """Transform a bounded batch concurrently while preserving input order."""
         tasks = [self.transform_single_async(payload) for payload in raw_payloads]
         return await asyncio.gather(*tasks)
+
+    async def transform_batch_with_errors_async(
+        self, raw_payloads: Iterable[Mapping[str, Any]]
+    ) -> list[dict[str, Any] | BaseException]:
+        """Return one result or exception per input without losing the batch."""
+        tasks = [self.transform_single_async(payload) for payload in raw_payloads]
+        return await asyncio.gather(*tasks, return_exceptions=True)

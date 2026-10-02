@@ -17,7 +17,6 @@ PATIENT_REQUIRED_FIELDS = (
     "first_name",
     "dob",
     "sex",
-    "ssn",
     "patient_address_id",
     "active",
 )
@@ -48,8 +47,8 @@ def _require_fields(
         )
 
 
-def validate_raw_payload(payload: Mapping[str, Any]) -> None:
-    """Validate a raw patient aggregate before transformation."""
+def validate_patient_and_address(payload: Mapping[str, Any]) -> None:
+    """Validate patient and address source records independently of visits."""
     if not isinstance(payload, Mapping):
         raise SchemaValidationError("Payload must be a mapping.")
 
@@ -59,8 +58,12 @@ def validate_raw_payload(payload: Mapping[str, Any]) -> None:
     _require_fields(patient, PATIENT_REQUIRED_FIELDS, "patient")
 
     patient_id = patient["patient_id"]
-    if isinstance(patient_id, bool) or not isinstance(patient_id, int):
-        raise SchemaValidationError("patient.patient_id must be an integer.")
+    if (
+        isinstance(patient_id, bool)
+        or not isinstance(patient_id, int)
+        or patient_id <= 0
+    ):
+        raise SchemaValidationError("patient.patient_id must be a positive integer.")
 
     active = patient["active"]
     if isinstance(active, bool):
@@ -73,17 +76,43 @@ def validate_raw_payload(payload: Mapping[str, Any]) -> None:
         if not isinstance(address, Mapping):
             raise SchemaValidationError("address must be a mapping or null.")
         _require_fields(address, ADDRESS_REQUIRED_FIELDS, "address")
+        if (
+            isinstance(address["address_id"], bool)
+            or not isinstance(address["address_id"], int)
+            or address["address_id"] <= 0
+        ):
+            raise SchemaValidationError("address.address_id must be a positive integer.")
         if address["patient_id"] != patient_id:
             raise SchemaValidationError("address.patient_id does not match patient_id.")
 
+
+def validate_visit(
+    visit: Mapping[str, Any], patient_id: int, *, index: int | None = None
+) -> None:
+    """Validate one visit so a bad visit need not reject its Patient."""
+    label = "visit" if index is None else f"visits[{index}]"
+    if not isinstance(visit, Mapping):
+        raise SchemaValidationError(f"{label} must be a mapping.")
+    _require_fields(visit, VISIT_REQUIRED_FIELDS, label)
+    if (
+        isinstance(visit["patient_visit_id"], bool)
+        or not isinstance(visit["patient_visit_id"], int)
+        or visit["patient_visit_id"] <= 0
+    ):
+        raise SchemaValidationError(
+            f"{label}.patient_visit_id must be a positive integer."
+        )
+    if visit["patient_id"] != patient_id:
+        raise SchemaValidationError(f"{label}.patient_id does not match patient_id.")
+
+
+def validate_raw_payload(payload: Mapping[str, Any]) -> None:
+    """Validate a complete raw aggregate for compatibility callers."""
+    validate_patient_and_address(payload)
+    patient = payload["patient"]
+    patient_id = patient["patient_id"]
     visits = payload.get("visits", [])
     if isinstance(visits, (str, bytes)) or not isinstance(visits, Sequence):
         raise SchemaValidationError("visits must be a sequence.")
     for index, visit in enumerate(visits):
-        if not isinstance(visit, Mapping):
-            raise SchemaValidationError(f"visits[{index}] must be a mapping.")
-        _require_fields(visit, VISIT_REQUIRED_FIELDS, f"visits[{index}]")
-        if visit["patient_id"] != patient_id:
-            raise SchemaValidationError(
-                f"visits[{index}].patient_id does not match patient_id."
-            )
+        validate_visit(visit, patient_id, index=index)

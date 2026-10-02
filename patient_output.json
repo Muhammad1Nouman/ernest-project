@@ -1,412 +1,1453 @@
-[
-  {
-    "patient_id": 10042,
-    "mrn": "MRN-88213",
-    "first_name": "Maria",
-    "middle_name": "Elena",
-    "last_name": "ALVAREZ",
-    "suffix": null,
-    "dob": "1978-04-12 00:00:00",
-    "sex": "F",
-    "ssn": "***-**-6789",
-    "patient_address_id": 1,
-    "home_phone": "(508) 555-0142",
-    "mobile_phone": null,
-    "email": "M.ALVAREZ@Example.COM",
-    "language": "Portuguese",
-    "marital_status": "Married",
-    "deceased_date": null,
-    "active": true,
-    "address": {
-      "address_id": 1,
-      "address_line1": "100 Main St",
-      "address_line2": "Apt 1",
-      "city": "Boston",
-      "state": "MA",
-      "zip_code": "02110"
-    },
-    "visits": [
-      {
-        "patient_visit_id": 1,
-        "visit_date": "2026-08-15 10:30:00",
-        "symptoms": "Fever and dry cough",
-        "prescription": "Amoxicillin 500mg"
-      },
-      {
-        "patient_visit_id": 2,
-        "visit_date": "2026-09-15 10:30:00",
-        "symptoms": "Severe headache and nausea",
-        "prescription": "Ibuprofen 200mg"
-      }
+{
+  "resourceType": "Bundle",
+  "id": "fhir-20261002T120648-6209429a",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/Bundle"
     ]
   },
-  {
-    "patient_id": 10043,
-    "mrn": "MRN-88214",
-    "first_name": "James",
-    "middle_name": null,
-    "last_name": "SMITH",
-    "suffix": null,
-    "dob": "1978-04-12 00:00:00",
-    "sex": "M",
-    "ssn": "***-**-6790",
-    "patient_address_id": 2,
-    "home_phone": "(508) 555-0143",
-    "mobile_phone": null,
-    "email": "J.SMITH@Example.COM",
-    "language": "English",
-    "marital_status": "Single",
-    "deceased_date": null,
-    "active": true,
-    "address": {
-      "address_id": 2,
-      "address_line1": "105 Main St",
-      "address_line2": null,
-      "city": "Cambridge",
-      "state": "MA",
-      "zip_code": "02111"
-    },
-    "visits": [
-      {
-        "patient_visit_id": 3,
-        "visit_date": "2026-08-15 10:30:00",
-        "symptoms": "Severe headache and nausea",
-        "prescription": "Amoxicillin 500mg"
-      },
-      {
-        "patient_visit_id": 4,
-        "visit_date": "2026-09-15 10:30:00",
-        "symptoms": "Routine physical checkup",
-        "prescription": "Ibuprofen 200mg"
+  "type": "collection",
+  "timestamp": "2026-10-02T12:06:48.776926Z",
+  "entry": [
+    {
+      "fullUrl": "urn:uuid:29395a9c-fa37-5341-90fe-3b16134e059d",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "10042",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "patient-r4-v1.0"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "https://example.org/fhir/sid/mrn",
+            "value": "MRN-88213"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "ALVAREZ",
+            "given": [
+              "Maria",
+              "Elena"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1978-04-12",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(508) 555-0142",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "M.ALVAREZ@Example.COM",
+            "use": "home"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "100 Main St",
+              "Apt 1"
+            ],
+            "city": "Boston",
+            "state": "MA",
+            "postalCode": "02110"
+          }
+        ]
       }
-    ]
-  },
-  {
-    "patient_id": 10044,
-    "mrn": "MRN-88215",
-    "first_name": "Robert",
-    "middle_name": "Elena",
-    "last_name": "JONES",
-    "suffix": null,
-    "dob": "1978-04-12 00:00:00",
-    "sex": "F",
-    "ssn": "***-**-6791",
-    "patient_address_id": 3,
-    "home_phone": "(508) 555-0144",
-    "mobile_phone": null,
-    "email": "R.JONES@Example.COM",
-    "language": "English",
-    "marital_status": "Single",
-    "deceased_date": null,
-    "active": true,
-    "address": {
-      "address_id": 3,
-      "address_line1": "110 Main St",
-      "address_line2": "Apt 3",
-      "city": "Somerville",
-      "state": "MA",
-      "zip_code": "02112"
     },
-    "visits": [
-      {
-        "patient_visit_id": 5,
-        "visit_date": "2026-08-15 10:30:00",
-        "symptoms": "Routine physical checkup",
-        "prescription": "Amoxicillin 500mg"
-      },
-      {
-        "patient_visit_id": 6,
-        "visit_date": "2026-09-15 10:30:00",
-        "symptoms": "Joint pain and fatigue",
-        "prescription": "Ibuprofen 200mg"
+    {
+      "fullUrl": "urn:uuid:b909e343-21ad-51e5-bc60-491514963556",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "1",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "1"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:29395a9c-fa37-5341-90fe-3b16134e059d"
+        },
+        "period": {
+          "start": "2026-08-15"
+        }
       }
-    ]
-  },
-  {
-    "patient_id": 10045,
-    "mrn": "MRN-88216",
-    "first_name": "Patricia",
-    "middle_name": null,
-    "last_name": "GARCIA",
-    "suffix": null,
-    "dob": "1978-04-12 00:00:00",
-    "sex": "M",
-    "ssn": "***-**-6792",
-    "patient_address_id": 4,
-    "home_phone": "(508) 555-0145",
-    "mobile_phone": null,
-    "email": "P.GARCIA@Example.COM",
-    "language": "English",
-    "marital_status": "Married",
-    "deceased_date": null,
-    "active": true,
-    "address": {
-      "address_id": 4,
-      "address_line1": "115 Main St",
-      "address_line2": null,
-      "city": "Quincy",
-      "state": "MA",
-      "zip_code": "02113"
     },
-    "visits": [
-      {
-        "patient_visit_id": 7,
-        "visit_date": "2026-08-15 10:30:00",
-        "symptoms": "Joint pain and fatigue",
-        "prescription": "Amoxicillin 500mg"
-      },
-      {
-        "patient_visit_id": 8,
-        "visit_date": "2026-09-15 10:30:00",
-        "symptoms": "Mild hypertension follow-up",
-        "prescription": "Ibuprofen 200mg"
+    {
+      "fullUrl": "urn:uuid:4e960ec2-f1c9-573c-98bd-f006fd1e0c38",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "2",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "2"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:29395a9c-fa37-5341-90fe-3b16134e059d"
+        },
+        "period": {
+          "start": "2026-09-15"
+        }
       }
-    ]
-  },
-  {
-    "patient_id": 10046,
-    "mrn": "MRN-88217",
-    "first_name": "John",
-    "middle_name": "Elena",
-    "last_name": "MILLER",
-    "suffix": null,
-    "dob": "1978-04-12 00:00:00",
-    "sex": "F",
-    "ssn": "***-**-6793",
-    "patient_address_id": 5,
-    "home_phone": "(508) 555-0146",
-    "mobile_phone": null,
-    "email": "J.MILLER@Example.COM",
-    "language": "English",
-    "marital_status": "Single",
-    "deceased_date": null,
-    "active": true,
-    "address": {
-      "address_id": 5,
-      "address_line1": "120 Main St",
-      "address_line2": "Apt 5",
-      "city": "Newton",
-      "state": "MA",
-      "zip_code": "02114"
     },
-    "visits": [
-      {
-        "patient_visit_id": 9,
-        "visit_date": "2026-08-15 10:30:00",
-        "symptoms": "Mild hypertension follow-up",
-        "prescription": "Amoxicillin 500mg"
-      },
-      {
-        "patient_visit_id": 10,
-        "visit_date": "2026-09-15 10:30:00",
-        "symptoms": "Fever and dry cough",
-        "prescription": "Ibuprofen 200mg"
+    {
+      "fullUrl": "urn:uuid:d9e5d4fe-13a5-5e1c-86f7-38cdd88ce19a",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "10043",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "patient-r4-v1.0"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "https://example.org/fhir/sid/mrn",
+            "value": "MRN-88214"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "SMITH",
+            "given": [
+              "James"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1978-04-12",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(508) 555-0143",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "J.SMITH@Example.COM",
+            "use": "home"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "105 Main St"
+            ],
+            "city": "Cambridge",
+            "state": "MA",
+            "postalCode": "02111"
+          }
+        ]
       }
-    ]
-  },
-  {
-    "patient_id": 10047,
-    "mrn": "MRN-88218",
-    "first_name": "Jennifer",
-    "middle_name": null,
-    "last_name": "DAVIS",
-    "suffix": null,
-    "dob": "1978-04-12 00:00:00",
-    "sex": "M",
-    "ssn": "***-**-6794",
-    "patient_address_id": 6,
-    "home_phone": "(508) 555-0147",
-    "mobile_phone": null,
-    "email": "J.DAVIS@Example.COM",
-    "language": "English",
-    "marital_status": "Single",
-    "deceased_date": null,
-    "active": true,
-    "address": {
-      "address_id": 6,
-      "address_line1": "125 Main St",
-      "address_line2": null,
-      "city": "Brookline",
-      "state": "MA",
-      "zip_code": "02115"
     },
-    "visits": [
-      {
-        "patient_visit_id": 11,
-        "visit_date": "2026-08-15 10:30:00",
-        "symptoms": "Fever and dry cough",
-        "prescription": "Amoxicillin 500mg"
-      },
-      {
-        "patient_visit_id": 12,
-        "visit_date": "2026-09-15 10:30:00",
-        "symptoms": "Severe headache and nausea",
-        "prescription": "Ibuprofen 200mg"
+    {
+      "fullUrl": "urn:uuid:dbd4c6c8-0bfa-543c-8e28-7467899b4958",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "3",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "3"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:d9e5d4fe-13a5-5e1c-86f7-38cdd88ce19a"
+        },
+        "period": {
+          "start": "2026-08-15"
+        }
       }
-    ]
-  },
-  {
-    "patient_id": 10048,
-    "mrn": "MRN-88219",
-    "first_name": "Michael",
-    "middle_name": "Elena",
-    "last_name": "RODRIGUEZ",
-    "suffix": null,
-    "dob": "1978-04-12 00:00:00",
-    "sex": "F",
-    "ssn": "***-**-6795",
-    "patient_address_id": 7,
-    "home_phone": "(508) 555-0148",
-    "mobile_phone": null,
-    "email": "M.RODRIGUEZ@Example.COM",
-    "language": "English",
-    "marital_status": "Married",
-    "deceased_date": null,
-    "active": true,
-    "address": {
-      "address_id": 7,
-      "address_line1": "130 Main St",
-      "address_line2": "Apt 7",
-      "city": "Waltham",
-      "state": "MA",
-      "zip_code": "02116"
     },
-    "visits": [
-      {
-        "patient_visit_id": 13,
-        "visit_date": "2026-08-15 10:30:00",
-        "symptoms": "Severe headache and nausea",
-        "prescription": "Amoxicillin 500mg"
-      },
-      {
-        "patient_visit_id": 14,
-        "visit_date": "2026-09-15 10:30:00",
-        "symptoms": "Routine physical checkup",
-        "prescription": "Ibuprofen 200mg"
+    {
+      "fullUrl": "urn:uuid:be717179-a8b6-5cdb-997c-0fed832dd96d",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "4",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "4"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:d9e5d4fe-13a5-5e1c-86f7-38cdd88ce19a"
+        },
+        "period": {
+          "start": "2026-09-15"
+        }
       }
-    ]
-  },
-  {
-    "patient_id": 10049,
-    "mrn": "MRN-88220",
-    "first_name": "Linda",
-    "middle_name": null,
-    "last_name": "MARTINEZ",
-    "suffix": null,
-    "dob": "1978-04-12 00:00:00",
-    "sex": "M",
-    "ssn": "***-**-6796",
-    "patient_address_id": 8,
-    "home_phone": "(508) 555-0149",
-    "mobile_phone": null,
-    "email": "L.MARTINEZ@Example.COM",
-    "language": "English",
-    "marital_status": "Single",
-    "deceased_date": null,
-    "active": true,
-    "address": {
-      "address_id": 8,
-      "address_line1": "135 Main St",
-      "address_line2": null,
-      "city": "Malden",
-      "state": "MA",
-      "zip_code": "02117"
     },
-    "visits": [
-      {
-        "patient_visit_id": 15,
-        "visit_date": "2026-08-15 10:30:00",
-        "symptoms": "Routine physical checkup",
-        "prescription": "Amoxicillin 500mg"
-      },
-      {
-        "patient_visit_id": 16,
-        "visit_date": "2026-09-15 10:30:00",
-        "symptoms": "Joint pain and fatigue",
-        "prescription": "Ibuprofen 200mg"
+    {
+      "fullUrl": "urn:uuid:07601092-e99a-5248-a365-886b5bb79846",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "10044",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "patient-r4-v1.0"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "https://example.org/fhir/sid/mrn",
+            "value": "MRN-88215"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "JONES",
+            "given": [
+              "Robert",
+              "Elena"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1978-04-12",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(508) 555-0144",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "R.JONES@Example.COM",
+            "use": "home"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "110 Main St",
+              "Apt 3"
+            ],
+            "city": "Somerville",
+            "state": "MA",
+            "postalCode": "02112"
+          }
+        ]
       }
-    ]
-  },
-  {
-    "patient_id": 10050,
-    "mrn": "MRN-88221",
-    "first_name": "David",
-    "middle_name": "Elena",
-    "last_name": "HERNANDEZ",
-    "suffix": null,
-    "dob": "1978-04-12 00:00:00",
-    "sex": "F",
-    "ssn": "***-**-6797",
-    "patient_address_id": 9,
-    "home_phone": "(508) 555-0150",
-    "mobile_phone": null,
-    "email": "D.HERNANDEZ@Example.COM",
-    "language": "English",
-    "marital_status": "Single",
-    "deceased_date": null,
-    "active": true,
-    "address": {
-      "address_id": 9,
-      "address_line1": "140 Main St",
-      "address_line2": "Apt 9",
-      "city": "Medford",
-      "state": "MA",
-      "zip_code": "02118"
     },
-    "visits": [
-      {
-        "patient_visit_id": 17,
-        "visit_date": "2026-08-15 10:30:00",
-        "symptoms": "Joint pain and fatigue",
-        "prescription": "Amoxicillin 500mg"
-      },
-      {
-        "patient_visit_id": 18,
-        "visit_date": "2026-09-15 10:30:00",
-        "symptoms": "Mild hypertension follow-up",
-        "prescription": "Ibuprofen 200mg"
+    {
+      "fullUrl": "urn:uuid:d969db08-56c1-51a7-a79b-263ed73071fe",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "5",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "5"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:07601092-e99a-5248-a365-886b5bb79846"
+        },
+        "period": {
+          "start": "2026-08-15"
+        }
       }
-    ]
-  },
-  {
-    "patient_id": 10051,
-    "mrn": "MRN-88222",
-    "first_name": "Elizabeth",
-    "middle_name": null,
-    "last_name": "LOPEZ",
-    "suffix": null,
-    "dob": "1978-04-12 00:00:00",
-    "sex": "M",
-    "ssn": "***-**-6798",
-    "patient_address_id": 10,
-    "home_phone": "(508) 555-0151",
-    "mobile_phone": null,
-    "email": "E.LOPEZ@Example.COM",
-    "language": "English",
-    "marital_status": "Married",
-    "deceased_date": null,
-    "active": true,
-    "address": {
-      "address_id": 10,
-      "address_line1": "145 Main St",
-      "address_line2": null,
-      "city": "Revere",
-      "state": "MA",
-      "zip_code": "02119"
     },
-    "visits": [
-      {
-        "patient_visit_id": 19,
-        "visit_date": "2026-08-15 10:30:00",
-        "symptoms": "Mild hypertension follow-up",
-        "prescription": "Amoxicillin 500mg"
-      },
-      {
-        "patient_visit_id": 20,
-        "visit_date": "2026-09-15 10:30:00",
-        "symptoms": "Fever and dry cough",
-        "prescription": "Ibuprofen 200mg"
+    {
+      "fullUrl": "urn:uuid:488371fb-aefc-515b-aada-b238ab0cd90b",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "6",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "6"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:07601092-e99a-5248-a365-886b5bb79846"
+        },
+        "period": {
+          "start": "2026-09-15"
+        }
       }
-    ]
-  }
-]
+    },
+    {
+      "fullUrl": "urn:uuid:69f7acde-8655-55dc-b9e6-09a998a54115",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "10045",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "patient-r4-v1.0"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "https://example.org/fhir/sid/mrn",
+            "value": "MRN-88216"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "GARCIA",
+            "given": [
+              "Patricia"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1978-04-12",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(508) 555-0145",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "P.GARCIA@Example.COM",
+            "use": "home"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "115 Main St"
+            ],
+            "city": "Quincy",
+            "state": "MA",
+            "postalCode": "02113"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:66efd37c-805f-508a-b9e0-fb7bb438480e",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "7",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "7"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:69f7acde-8655-55dc-b9e6-09a998a54115"
+        },
+        "period": {
+          "start": "2026-08-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1ba6654e-db39-5388-b2e4-b13abc97f2c2",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "8",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "8"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:69f7acde-8655-55dc-b9e6-09a998a54115"
+        },
+        "period": {
+          "start": "2026-09-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:b34368d6-0a5d-51ac-bb03-1101cb35b67e",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "10046",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "patient-r4-v1.0"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "https://example.org/fhir/sid/mrn",
+            "value": "MRN-88217"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "MILLER",
+            "given": [
+              "John",
+              "Elena"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1978-04-12",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(508) 555-0146",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "J.MILLER@Example.COM",
+            "use": "home"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "120 Main St",
+              "Apt 5"
+            ],
+            "city": "Newton",
+            "state": "MA",
+            "postalCode": "02114"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5635ab46-3238-5831-9fc4-118e30cd8874",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "9",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "9"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:b34368d6-0a5d-51ac-bb03-1101cb35b67e"
+        },
+        "period": {
+          "start": "2026-08-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:6d5d13ca-0a25-57f2-801c-7eea7374c11c",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "10",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "10"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:b34368d6-0a5d-51ac-bb03-1101cb35b67e"
+        },
+        "period": {
+          "start": "2026-09-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5d921d27-1939-5193-b9c6-db97d6a16b01",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "10047",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "patient-r4-v1.0"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "https://example.org/fhir/sid/mrn",
+            "value": "MRN-88218"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "DAVIS",
+            "given": [
+              "Jennifer"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1978-04-12",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(508) 555-0147",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "J.DAVIS@Example.COM",
+            "use": "home"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "125 Main St"
+            ],
+            "city": "Brookline",
+            "state": "MA",
+            "postalCode": "02115"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:7ac683d2-20d4-5dff-83c5-07ad2569a503",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "11",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "11"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:5d921d27-1939-5193-b9c6-db97d6a16b01"
+        },
+        "period": {
+          "start": "2026-08-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:44246773-b1ae-5b32-b415-5ae5284b52e2",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "12",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "12"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:5d921d27-1939-5193-b9c6-db97d6a16b01"
+        },
+        "period": {
+          "start": "2026-09-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:429ea7a1-2d9a-557f-80b0-939c0ef5dc31",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "10048",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "patient-r4-v1.0"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "https://example.org/fhir/sid/mrn",
+            "value": "MRN-88219"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "RODRIGUEZ",
+            "given": [
+              "Michael",
+              "Elena"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1978-04-12",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(508) 555-0148",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "M.RODRIGUEZ@Example.COM",
+            "use": "home"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "130 Main St",
+              "Apt 7"
+            ],
+            "city": "Waltham",
+            "state": "MA",
+            "postalCode": "02116"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:efb3e185-da3e-5846-914b-548d15f08366",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "13",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "13"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:429ea7a1-2d9a-557f-80b0-939c0ef5dc31"
+        },
+        "period": {
+          "start": "2026-08-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:98a85cbd-9622-5d6f-9fae-13fb3f502f57",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "14",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "14"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:429ea7a1-2d9a-557f-80b0-939c0ef5dc31"
+        },
+        "period": {
+          "start": "2026-09-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:f645747c-4896-59c6-9d4c-8bfffd40c7d0",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "10049",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "patient-r4-v1.0"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "https://example.org/fhir/sid/mrn",
+            "value": "MRN-88220"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "MARTINEZ",
+            "given": [
+              "Linda"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1978-04-12",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(508) 555-0149",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "L.MARTINEZ@Example.COM",
+            "use": "home"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "135 Main St"
+            ],
+            "city": "Malden",
+            "state": "MA",
+            "postalCode": "02117"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:1cc62e2a-dc5d-570b-af27-111ab6082680",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "15",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "15"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:f645747c-4896-59c6-9d4c-8bfffd40c7d0"
+        },
+        "period": {
+          "start": "2026-08-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:ee68b5e7-6aff-51b8-b54e-cdadc0b7c4aa",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "16",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "16"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:f645747c-4896-59c6-9d4c-8bfffd40c7d0"
+        },
+        "period": {
+          "start": "2026-09-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:75791cf0-e1f1-5747-91a0-4d318b346579",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "10050",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "patient-r4-v1.0"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "https://example.org/fhir/sid/mrn",
+            "value": "MRN-88221"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "HERNANDEZ",
+            "given": [
+              "David",
+              "Elena"
+            ]
+          }
+        ],
+        "gender": "female",
+        "birthDate": "1978-04-12",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(508) 555-0150",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "D.HERNANDEZ@Example.COM",
+            "use": "home"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "140 Main St",
+              "Apt 9"
+            ],
+            "city": "Medford",
+            "state": "MA",
+            "postalCode": "02118"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5f6361c8-beea-5376-90d9-5b5e7ae9102c",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "17",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "17"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:75791cf0-e1f1-5747-91a0-4d318b346579"
+        },
+        "period": {
+          "start": "2026-08-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:366fdead-edf4-530d-ada3-673a411cbfa8",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "18",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "18"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:75791cf0-e1f1-5747-91a0-4d318b346579"
+        },
+        "period": {
+          "start": "2026-09-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:5258f92b-157b-5556-98d1-32a020659d0f",
+      "resource": {
+        "resourceType": "Patient",
+        "id": "10051",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Patient"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "patient-r4-v1.0"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "use": "usual",
+            "system": "https://example.org/fhir/sid/mrn",
+            "value": "MRN-88222"
+          }
+        ],
+        "active": true,
+        "name": [
+          {
+            "use": "official",
+            "family": "LOPEZ",
+            "given": [
+              "Elizabeth"
+            ]
+          }
+        ],
+        "gender": "male",
+        "birthDate": "1978-04-12",
+        "telecom": [
+          {
+            "system": "phone",
+            "value": "(508) 555-0151",
+            "use": "home"
+          },
+          {
+            "system": "email",
+            "value": "E.LOPEZ@Example.COM",
+            "use": "home"
+          }
+        ],
+        "address": [
+          {
+            "use": "home",
+            "type": "physical",
+            "line": [
+              "145 Main St"
+            ],
+            "city": "Revere",
+            "state": "MA",
+            "postalCode": "02119"
+          }
+        ]
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:568e4e90-a4fa-51b1-81e2-007660d19886",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "19",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "19"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:5258f92b-157b-5556-98d1-32a020659d0f"
+        },
+        "period": {
+          "start": "2026-08-15"
+        }
+      }
+    },
+    {
+      "fullUrl": "urn:uuid:819f4f0b-f4ba-50e5-9439-bce1414be6e0",
+      "resource": {
+        "resourceType": "Encounter",
+        "id": "20",
+        "meta": {
+          "profile": [
+            "http://hl7.org/fhir/StructureDefinition/Encounter"
+          ],
+          "tag": [
+            {
+              "system": "https://example.org/fhir/mapping-version",
+              "code": "encounter-r4-v1.0"
+            },
+            {
+              "system": "https://example.org/fhir/source-assumption",
+              "code": "completed-ambulatory",
+              "display": "patient_visit = completed ambulatory Encounter"
+            }
+          ]
+        },
+        "identifier": [
+          {
+            "system": "https://example.org/fhir/sid/encounter",
+            "value": "20"
+          }
+        ],
+        "status": "finished",
+        "class": {
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+          "code": "AMB",
+          "display": "ambulatory"
+        },
+        "subject": {
+          "reference": "urn:uuid:5258f92b-157b-5556-98d1-32a020659d0f"
+        },
+        "period": {
+          "start": "2026-09-15"
+        }
+      }
+    }
+  ]
+}
